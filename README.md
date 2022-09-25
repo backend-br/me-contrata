@@ -16,7 +16,7 @@ em contato.
 
 ## Como se cadastrar?
 
-Abra uma [issue](https://github.com/backend-br/vagas/issues), e preencha os dados seguindo o modelo padrão gerado
+Abra uma [issue](https://github.com/backend-br/me-contrata/issues), e preencha os dados seguindo o modelo padrão gerado
 pela issue.
 
 <div id='license'></div>
