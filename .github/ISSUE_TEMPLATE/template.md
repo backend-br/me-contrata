@@ -6,7 +6,7 @@ title: 'Coloque seu nome completo aqui'
 
 <!-- Não divulgue dados pessoais aqui, pois as informações das issues são públicas. -->
 
-## Seu nome completo
+## Nome completo
 
 Informe seu nome completo.
 
@@ -32,7 +32,7 @@ Informe o tipo de contratação que você aceita, CLT, PJ ou outra.
 
 ## Labels
 
-<!-- Retire os labels que não fazem sentido à vaga. -->
+<!-- Retire os labels que não fazem sentido à candidatura. -->
 
 ### Nível
 
