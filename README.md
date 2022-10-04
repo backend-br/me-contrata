@@ -24,3 +24,9 @@ pela issue.
 ## Licença
 
 Licenciado sob [MIT](LICENSE).
+
+<div id='contributing'></div>
+
+## Contribuindo
+
+Siga as [diretrizes de contribuição](CONTRIBUTING.md) para contribuir com o projeto.
