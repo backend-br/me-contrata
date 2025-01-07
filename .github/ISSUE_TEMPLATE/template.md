@@ -28,7 +28,7 @@ Informe o tipo de contratação que você aceita, CLT, PJ ou outra.
 
 ## Contato
 
-- [Linkedin](URL_DO_SEU_LINKEDIN)
+- [Linkedin]() <!-- Informe o link do seu perfil no Linkedin -->
 
 ## Labels
 
