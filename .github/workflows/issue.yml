@@ -3,6 +3,8 @@ name: Labeling new issue
 on:
   issues:
     types: [ 'opened', 'edited' ]
+    permissions:
+      issues: write
 
 jobs:
   build:
