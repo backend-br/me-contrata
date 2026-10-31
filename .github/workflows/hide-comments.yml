@@ -1,0 +1,33 @@
+name: Hide comments
+
+on:
+  issue_comment:
+    types: [ 'created' ]
+
+concurrency:
+  group: hide-comments-${{ github.event.comment.id }}
+
+permissions: {}
+
+jobs:
+  hide:
+    name: Hide comments
+    if: ${{ !github.event.issue.pull_request }}
+    permissions:
+      contents: read
+      issues: write
+    runs-on: ubuntu-26.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          sparse-checkout: .github/triage
+          persist-credentials: false
+
+      - name: Hide comments of people other than the author
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+        with:
+          script: |
+            const { run } = await import(`${process.env.GITHUB_WORKSPACE}/.github/triage/hide-comments.mjs`)
+            await run({ github })

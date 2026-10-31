@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Vagas de backend
+    url: https://github.com/backend-br/vagas/issues
+    about: Para divulgar uma vaga, use o repositório backend-br/vagas.
