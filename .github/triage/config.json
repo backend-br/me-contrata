@@ -1,0 +1,11 @@
+{
+  "labels": {
+    "verified": "verificado",
+    "review": "em-triagem",
+    "rejected": "triagem-recusada",
+    "override": "revisado",
+    "optIn": "divulgar-perfil"
+  },
+  "formsSince": "2026-10-31T00:00:00Z",
+  "skipAssociations": ["OWNER", "MEMBER", "COLLABORATOR"]
+}

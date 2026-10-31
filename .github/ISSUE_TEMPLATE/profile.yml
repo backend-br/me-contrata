@@ -1,0 +1,179 @@
+name: Meu perfil
+description: Divulgue seu perfil de backend para quem está recrutando.
+title: "Nome completo - Cargo"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Esta issue é pública. Não coloque telefone, e-mail, endereço ou documentos: o contato acontece pelos links do perfil.
+        Um perfil por pessoa. Para atualizar, edite a issue. Perfis sem atualização por 60 dias são fechados automaticamente.
+  - type: input
+    id: name
+    attributes:
+      label: Nome completo
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Cargo
+      placeholder: Desenvolvedora Back-end
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: Apresentação
+      description: Fale sobre você, seu histórico e o que procura.
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: Experiência
+      description: Empresas, projetos e resultados que você quer destacar.
+  - type: dropdown
+    id: level
+    attributes:
+      label: Nível
+      options:
+        - Estagiário
+        - Júnior
+        - Pleno
+        - Sênior
+        - Especialista
+    validations:
+      required: true
+  - type: dropdown
+    id: contract
+    attributes:
+      label: Regimes de contratação
+      multiple: true
+      options:
+        - CLT
+        - PJ
+        - Contrato
+        - Freelance
+    validations:
+      required: true
+  - type: dropdown
+    id: work-model
+    attributes:
+      label: Modelos de trabalho
+      multiple: true
+      options:
+        - Remoto
+        - Híbrido
+        - Presencial
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Localização
+      description: Cidade e UF. Vagas híbridas e presenciais só são indicadas para quem está na mesma UF.
+      placeholder: Belo Horizonte - MG
+    validations:
+      required: true
+  - type: dropdown
+    id: stack
+    attributes:
+      label: Tecnologias
+      description: As tecnologias com que você trabalha. Elas viram labels e ajudam a encontrar vagas compatíveis.
+      multiple: true
+      options:
+        - ".NET"
+        - Apache Kafka
+        - ASP
+        - AWS
+        - Azure
+        - "C#"
+        - C++
+        - CI/CD
+        - Clean architecture
+        - Clipper
+        - DDD
+        - Delphi
+        - Django
+        - Docker
+        - DRY
+        - DynamoDB
+        - Elasticsearch
+        - Elixir
+        - Event-Driven architecture
+        - FastAPI
+        - Flask
+        - GCP
+        - Git
+        - Go
+        - GraphQL
+        - gRPC
+        - Hexagonal architecture
+        - Java
+        - JavaScript
+        - Jenkins
+        - Kotlin
+        - Kubernetes
+        - Laravel
+        - Linux
+        - Microservices
+        - MongoDB
+        - MySQL
+        - NestJS
+        - Node.js
+        - OOP
+        - Oracle
+        - PHP
+        - PostgreSQL
+        - Python
+        - RabbitMQ
+        - Redis
+        - Ruby
+        - Ruby on Rails
+        - Rust
+        - Scala
+        - SOLID
+        - Spring
+        - SQL
+        - SQL Server
+        - Symfony
+        - TDD
+        - Terraform
+        - Testes automatizados
+        - TypeScript
+        - Windows
+    validations:
+      required: true
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn
+      placeholder: https://www.linkedin.com/in/seu-perfil
+    validations:
+      required: true
+  - type: input
+    id: github
+    attributes:
+      label: GitHub
+      placeholder: https://github.com/seu-usuario
+  - type: input
+    id: portfolio
+    attributes:
+      label: Portfólio
+      placeholder: https://seu-site.com.br
+  - type: checkboxes
+    id: sharing
+    attributes:
+      label: Divulgação
+      description: Opcional. Você pode desmarcar a qualquer momento editando a issue.
+      options:
+        - label: Autorizo divulgar meu perfil em backend-br.github.io/talentos e nas vagas compatíveis do backend-br/vagas, sem me mencionar.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmações
+      options:
+        - label: Entendo que esta issue é pública e não incluí telefone, e-mail ou documentos.
+          required: true
+        - label: Este é o meu único perfil aberto neste repositório.
+          required: true
